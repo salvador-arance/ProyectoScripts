@@ -1,0 +1,11 @@
+[Unit]
+Description=Guardian SSH Telegram
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/salva/ProyectoScripts/scripts/scripts-salva/scripts-ssh/guardian_ssh.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
